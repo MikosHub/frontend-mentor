@@ -1,24 +1,19 @@
-# Frontend Mentor - Recipe page solution
+# Frontend Mentor - GitHub User Search solution
 
-My solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). 
+My solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). 
 
 ### Total Work Time
-~ 2 hours
+~ 4 hours
 
 ### Built with
 
 - HTML5
 - CSS
+- jQuery
 - Mobile-first workflow
 
 ### Screenshots
 
 ![Mobile Version](./screenshot_mobile.png)
 ![Desktop Version](./screenshot_desktop.png)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 
