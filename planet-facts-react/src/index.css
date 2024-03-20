@@ -1,0 +1,14 @@
+:root {
+  --planet-0: hsl(194, 48%, 49%);
+  --planet-1: hsl(33, 82%, 61%);
+  --planet-2: hsl(263, 67%, 51%);
+  --planet-3: hsl(10, 63%, 51%);
+  --planet-4: hsl(2, 68%, 53%);
+  --planet-5: hsl(17, 73%, 46%);
+  --planet-6: hsl(169, 73%, 44%);
+  --planet-7: hsl(222, 87%, 56%);
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,23 @@
+App - { currentPlanet }
+  Header
+    Title
+      H1
+    Planet Select
+      Mobile Menu
+        Hamburger Menu
+        Overlay Menu
+          IconButton
+      Desktop Menu
+        Button
+  Main { currentDisplay }
+    Mobile Display Select
+      Display Select Button
+    Image Container
+    Info Container
+      Planet Name - H2
+      Description - P
+      Source      - P
+      Desktop Display Select
+        Display Select Button      
+    Stats List
+      Stats Card

@@ -1,0 +1,31 @@
+main.planet-0-active {
+  --active-planet: var(--planet-0);
+}
+
+main.planet-1-active {
+  --active-planet: var(--planet-1);
+}
+
+main.planet-2-active {
+  --active-planet: var(--planet-2);
+}
+
+main.planet-3-active {
+  --active-planet: var(--planet-3);
+}
+
+main.planet-4-active {
+  --active-planet: var(--planet-4);
+}
+
+main.planet-5-active {
+  --active-planet: var(--planet-5);
+}
+
+main.planet-6-active {
+  --active-planet: var(--planet-6);
+}
+
+main.planet-7-active {
+  --active-planet: var(--planet-7);
+}
