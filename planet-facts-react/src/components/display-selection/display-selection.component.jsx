@@ -3,7 +3,7 @@ import "./display-selection.styles.css";
 const displayTypes = ["overview", "structure", "geology"];
 
 const DisplaySelection = ({ currentDisplay, onChangeDisplay }) => (
-  <ul>
+  <ul className="display-select-container">
     {displayTypes.map((type) => (
       <li
         key={type}

@@ -16,10 +16,12 @@ const AppMain = ({ currentPlanet }) => {
 
   return (
     <main className={`planet-${currentPlanet}-active`}>
+      <hr />
       <DisplaySelection
         currentDisplay={currentDisplay}
         onChangeDisplay={onChangeDisplay}
       />
+      <hr />
       <PlanetImage
         currentPlanet={currentPlanet}
         currentDisplay={currentDisplay}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap");
+
 :root {
   --planet-0: hsl(194, 48%, 49%);
   --planet-1: hsl(33, 82%, 61%);
@@ -7,8 +9,21 @@
   --planet-5: hsl(17, 73%, 46%);
   --planet-6: hsl(169, 73%, 44%);
   --planet-7: hsl(222, 87%, 56%);
+  --background: hsl(240, 67%, 8%);
+  --line: hsl(0, 0%, 59%);
+
+  --font-antonio: "Antonio", sans-serif;
+  --font-spartan: "League Spartan", sans-serif;
 }
 
+body {
+  margin: 0 24px;
+  font-family: var(--font-spartan);
+  background-color: var(--background);
+  background-image: url("./images/background-stars.svg");
+}
+
+/* utility classes */
 .hidden {
   display: none;
 }

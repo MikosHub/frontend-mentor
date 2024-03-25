@@ -1,0 +1,54 @@
+.image-container {
+  height: 304px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+img.planet-0 {
+  width: 111px;
+  height: 111px;
+}
+
+img.planet-1 {
+  width: 154px;
+  height: 154px;
+}
+
+img.planet-2 {
+  width: 173px;
+  height: 173px;
+}
+
+img.planet-3 {
+  width: 129px;
+  height: 129px;
+}
+
+img.planet-4 {
+  width: 224px;
+  height: 224px;
+}
+
+img.planet-5 {
+  width: 256px;
+  height: 256px;
+}
+
+img.planet-6 {
+  width: 176px;
+  height: 176px;
+}
+
+img.planet-7 {
+  width: 173px;
+  height: 173px;
+}
+
+img.geology {
+  position: absolute;
+  height: 139px;
+  width: 114px;
+  bottom: 0;
+}

@@ -7,15 +7,16 @@ const PlanetImage = ({ currentPlanet, currentDisplay }) => {
   const suffix = currentDisplay === "structure" ? "-internal" : "";
 
   return (
-    <div>
+    <div className="image-container">
       <img
+        className={`planet-${currentPlanet}`}
         src={require(`../../images/planet-${planetName}${suffix}.svg`)}
         alt=""
       />
       <img
         src={require(`../../images/geology-${planetName}.png`)}
         alt=""
-        className={currentDisplay === "geology" ? "" : "hidden"}
+        className={`geology ${currentDisplay === "geology" ? "" : "hidden"}`}
       />
     </div>
   );
