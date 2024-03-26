@@ -1,18 +1,16 @@
 import data from "../../data.json";
+import PlanetSelectionEntry from "../planet-selection-entry/planet-selection-entry.component";
 import "./planet-selection.styles.css";
 
 const DesktopPlanetSelection = ({ currentPlanet, onChangeCurrentPlanet }) => (
   <ul className="planet-select">
     {data.map((planet, idx) => (
-      <li
+      <PlanetSelectionEntry
         key={idx}
-        className={`planet-${currentPlanet} ${
-          currentPlanet === idx ? "active" : ""
-        }`}
-        onClick={() => onChangeCurrentPlanet(idx)}
-      >
-        {planet.name}
-      </li>
+        planet={{ ...planet, idx }}
+        isActive={currentPlanet === idx}
+        onChangeCurrentPlanet={onChangeCurrentPlanet}
+      />
     ))}
   </ul>
 );

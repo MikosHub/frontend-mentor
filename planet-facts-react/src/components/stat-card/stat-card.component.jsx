@@ -1,7 +1,9 @@
+import './stat-card.styles.css';
+
 const StatCard = ({ name, value }) => (
-  <div>
+  <div className='stat-card'>
     <h3>{name}</h3>
-    <div>{value}</div>
+    <span>{value}</span>
   </div>
 );
 

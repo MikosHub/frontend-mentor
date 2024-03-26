@@ -1,0 +1,15 @@
+.planet-entry {
+  color: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 24px;
+}
+
+.planet-entry .name {
+  font-size: 15pt;
+  text-transform: uppercase;
+  letter-spacing: 1.36px;
+  line-height: 25px;
+  font-weight: 700;
+}

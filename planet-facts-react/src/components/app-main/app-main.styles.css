@@ -9,7 +9,6 @@ hr {
   width: 100vw;
   border: none;
   border-bottom: 1px solid var(--line);
-  opacity: 0.2;
 }
 
 main.planet-0-active {

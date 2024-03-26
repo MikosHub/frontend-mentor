@@ -5,15 +5,11 @@ import AppMain from "./components/app-main/app-main.component";
 const App = () => {
   const [currentPlanet, setCurrentPlanet] = useState(0);
 
-  const onChangeCurrentPlanet = (newPlanet) => {
-    setCurrentPlanet(newPlanet);
-  };
-
   return (
     <div>
       <AppHeader
         currentPlanet={currentPlanet}
-        onChangeCurrentPlanet={onChangeCurrentPlanet}
+        onChangeCurrentPlanet={setCurrentPlanet}
       />
       <AppMain currentPlanet={currentPlanet} />
     </div>

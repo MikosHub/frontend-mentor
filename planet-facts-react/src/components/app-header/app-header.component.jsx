@@ -11,6 +11,7 @@ const AppHeader = ({ currentPlanet, onChangeCurrentPlanet }) => {
       <h1>The Planets</h1>
       <img
         id="menuIcon"
+        className={`${menuOpen ? 'greyout' : ''}`}
         src={iconMenu}
         alt="menu icon"
         onClick={() => setMenuOpen(!menuOpen)}

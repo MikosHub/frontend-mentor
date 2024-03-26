@@ -1,14 +1,14 @@
 import data from "../../data.json";
+import './planet-info.styles.css';
 
 const PlanetInfo = ({ currentPlanet, currentDisplay }) => {
-  console.log(data[currentPlanet]);
   const { name } = data[currentPlanet];
   const { content, source } = data[currentPlanet][currentDisplay];
 
   return (
-    <div>
+    <div className="planet-info">
       <h2>{name}</h2>
-      <p>{content}</p>
+      <p className="content">{content}</p>
       <p>
         Source:{" "}
         <a

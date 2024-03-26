@@ -1,13 +1,19 @@
 import data from "../../data.json";
 import StatCard from "../stat-card/stat-card.component";
+import './stat-list.styles.css'
 
-const stats = ["rotation", "revolution", "radius", "temperature"];
+const stats = {
+  rotation: 'rotation time',
+  revolution: 'revolution time',
+  radius: 'radius',
+  temperature: 'average temp.'
+}
 
 const StatList = ({ currentPlanet }) => (
-  <div>
-    {stats.map((stat) => (
+  <div className="stat-list">
+    {Object.keys(stats).map((stat) => (
       <StatCard
-        name={stat}
+        name={stats[stat]}
         value={data[currentPlanet][stat]}
       />
     ))}

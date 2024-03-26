@@ -18,6 +18,11 @@ header h1 {
 }
 
 #menuIcon {
+  cursor: pointer;
   width: 24px;
   height: 17px;
+}
+
+#menuIcon.greyout {
+  opacity: 0.25;
 }
