@@ -1,5 +1,6 @@
 import data from "../../data.json";
-import './planet-info.styles.css';
+import linkIcon from "../../images/icon-source.svg";
+import "./planet-info.styles.css";
 
 const PlanetInfo = ({ currentPlanet, currentDisplay }) => {
   const { name } = data[currentPlanet];
@@ -9,14 +10,18 @@ const PlanetInfo = ({ currentPlanet, currentDisplay }) => {
     <div className="planet-info">
       <h2>{name}</h2>
       <p className="content">{content}</p>
-      <p>
-        Source:{" "}
+      <p className="link">
+        <span>Source:</span>
         <a
           href={source}
           target="_blank"
           rel="noreferrer"
         >
           Wikipedia
+          <img
+            src={linkIcon}
+            alt="link icon"
+          />
         </a>
       </p>
     </div>

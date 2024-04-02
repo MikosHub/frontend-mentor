@@ -30,3 +30,10 @@ li.display-select.active::after {
   width: 100%;
   height: 4px;
 }
+
+@media screen and (min-width: 768px) {
+  ul.display-select-container {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+}

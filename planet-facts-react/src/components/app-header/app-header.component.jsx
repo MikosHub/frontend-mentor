@@ -4,14 +4,15 @@ import iconMenu from "../../images/icon-hamburger.svg";
 import { useState } from "react";
 
 const AppHeader = ({ currentPlanet, onChangeCurrentPlanet }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const planetMenuOpen = window.screen.availWidth >= 768;
+  const [menuOpen, setMenuOpen] = useState(planetMenuOpen);
 
   return (
     <header>
       <h1>The Planets</h1>
       <img
         id="menuIcon"
-        className={`${menuOpen ? 'greyout' : ''}`}
+        className={`${menuOpen ? "greyout" : ""}`}
         src={iconMenu}
         alt="menu icon"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -19,7 +20,10 @@ const AppHeader = ({ currentPlanet, onChangeCurrentPlanet }) => {
       {menuOpen && (
         <PlanetSelection
           currentPlanet={currentPlanet}
-          onChangeCurrentPlanet={onChangeCurrentPlanet}
+          onChangeCurrentPlanet={(newPlanet) => {
+            setMenuOpen(false);
+            onChangeCurrentPlanet(newPlanet);
+          }}
         />
       )}
     </header>

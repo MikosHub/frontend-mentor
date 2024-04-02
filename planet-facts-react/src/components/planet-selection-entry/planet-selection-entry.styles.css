@@ -4,6 +4,15 @@
   padding: 0;
   list-style: none;
   padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.planet-entry:not(:first-of-type) {
+  border-top: 1px solid var(--line);
 }
 
 .planet-entry .name {
@@ -12,4 +21,63 @@
   letter-spacing: 1.36px;
   line-height: 25px;
   font-weight: 700;
+  flex-grow: 1;
+}
+
+.planet-entry .color-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.planet-entry.planet-0 .color-circle {
+  background-color: var(--planet-0);
+}
+
+.planet-entry.planet-1 .color-circle {
+  background-color: var(--planet-1);
+}
+
+.planet-entry.planet-2 .color-circle {
+  background-color: var(--planet-2);
+}
+
+.planet-entry.planet-3 .color-circle {
+  background-color: var(--planet-3);
+}
+
+.planet-entry.planet-4 .color-circle {
+  background-color: var(--planet-4);
+}
+
+.planet-entry.planet-5 .color-circle {
+  background-color: var(--planet-5);
+}
+
+.planet-entry.planet-6 .color-circle {
+  background-color: var(--planet-6);
+}
+
+.planet-entry.planet-7 .color-circle {
+  background-color: var(--planet-7);
+}
+
+@media screen and (min-width: 768px) {
+  .planet-entry {
+    padding: 0;
+  }
+  .planet-entry .name {
+    font-size: 11pt;
+    letter-spacing: 1;
+  }
+
+  .planet-entry .color-circle,
+  .planet-entry img {
+    display: none;
+  }
+
+  .planet-entry:not(:first-of-type) {
+    border-top: none;
+  }
 }

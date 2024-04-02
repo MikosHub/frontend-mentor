@@ -52,3 +52,10 @@ img.geology {
   width: 114px;
   bottom: 13px;
 }
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+  }
+}

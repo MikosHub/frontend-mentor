@@ -1,22 +1,41 @@
 .planet-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .planet-info h2 {
-    margin: 0;
-    color: white;
-    font-family: var(--font-antonio);
-    font-size: 40px;
-    font-weight: normal;
-    text-transform: uppercase;
+  margin: 0;
+  color: white;
+  font-family: var(--font-antonio);
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .planet-info .content {
-    color: white;
-    text-align: center;
-    font-size: 11pt;
-    line-height: 22px;
-    font-weight: normal;
+  color: white;
+  text-align: center;
+  font-size: 11pt;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.planet-info .link {
+  display: flex;
+  gap: 5px;
+  font-size: 12pt;
+  font-weight: normal;
+}
+
+.planet-info .link a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.planet-info .link span,
+.planet-info .link a {
+  color: white;
+  opacity: 0.5;
 }

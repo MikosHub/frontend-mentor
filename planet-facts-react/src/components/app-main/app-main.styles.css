@@ -1,7 +1,5 @@
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
 }
 
 hr {
@@ -41,4 +39,7 @@ main.planet-6-active {
 
 main.planet-7-active {
   --active-planet: var(--planet-7);
+}
+
+@media screen and (min-width: 768px) {
 }
