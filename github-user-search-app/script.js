@@ -83,8 +83,14 @@ function fetchUserData() {
 }
 
 $(document).ready(() => {
-  $("#result").hide();
-
+  const queryParams = new URLSearchParams(window.location.search);
+  const initialUsername = queryParams.get("username");
+  if (initialUsername) {
+    $("#nameInput").val(initialUsername);
+    fetchUserData();
+  } else {
+    $("#result").hide();
+  }
   // Event bindings
   $("#modeSelect").click(toggleMode);
   $("#search button").click(fetchUserData);
